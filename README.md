@@ -93,6 +93,13 @@ chmod +x install.sh
 ./install.sh
 ```
 
+## Mención especial al proyecto Firmador de Libre.CR
+
+La aplicación **Firmador**, desarrollada por el proyecto **Libre.CR**, es un software libre y multiplataforma creado en 2018 por **Francisco de la Peña**, quien junto con otros colaboradores ha mantenido activamente su desarrollo desde entonces.
+
+Puede consultar el código fuente del proyecto en el siguiente enlace:  
+🔗 [Repositorio oficial en Codeberg](https://codeberg.org/firmador/firmador)
+
 ## Autor
 
 Este asistente de instalación ha sido desarrollado por [Misael Matamoros](https://t.me/mismatso).
