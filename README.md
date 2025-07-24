@@ -1,7 +1,7 @@
 # Instalador de Firma Digital de Costa Rica para Debian 12 y Ubuntu 22.04
 
-![Debian](https://img.shields.io/badge/debian-12+-red)
-![Ubuntu](https://img.shields.io/badge/ubuntu-22.04-orange)
+![Debian](https://img.shields.io/badge/debian-12+-green)
+![Ubuntu](https://img.shields.io/badge/ubuntu-22.04-green)
 ![License](https://img.shields.io/github/license/mismatso/firmador-cr-linux-installer)
 
 Este proyecto contiene un script para automatizar la instalación de los componentes necesarios para la Firma Digital de Costa Rica en sistemas operativos Debian 12 (Bookworm) y Ubuntu 22.04 LTS.
