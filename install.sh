@@ -3,6 +3,23 @@
 # Dectectar el directorio del script
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# Verifica la versión del sistema operativo
+# solo debe continuar si es Debian 12 (Bookworm) o Ubuntu 22.04 LTS
+if ! command -v lsb_release &> /dev/null; then
+    echo "❌ El comando 'lsb_release' no está instalado. Por favor, instálelo con:"
+    echo "sudo apt install lsb-release"
+    exit 1
+fi
+
+echo "🔄 Verificando la versión del sistema operativo..."
+if [[ "$(lsb_release -cs)" != "bookworm" && "$(lsb_release -rs)" != "22.04" ]]; then
+    echo "Este script ha sido probado únicamente en Debian 12 (Bookworm) y Ubuntu 22.04 LTS."
+    exit 1
+else
+    echo "✔️ Sistema operativo compatible: $(lsb_release -ds)"
+fi
+
+
 # Limpiando archivos de ejecución anteriores
 echo "🔄 Limpiando archivos de ejecución anteriores..."
 rm -rf "$SCRIPT_DIR/Installers"
